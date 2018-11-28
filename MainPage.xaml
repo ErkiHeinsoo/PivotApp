@@ -27,175 +27,202 @@
             <StackPanel RelativePanel.Below="headBlock">
 
                 <Pivot>
-                    <PivotItem Header="Leht 1" Name="pivot1"></PivotItem>
-                    <PivotItem Header="Leht 2" Name="pivot2"></PivotItem>
+                    <PivotItem Header="Leht 1" Name="pivot1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Row="2">
+                                <TextBlock Text="Leht1" Margin="10,0,0,0" FontSize="30"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Grid.Row="3" BorderBrush="White" BorderThickness="5,5,5,1">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="400"></RowDefinition>
+                                        <RowDefinition Height="479"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Image Source="Assets\heart.jpeg" Grid.Row="0"/>
+                                    <Image Source="Assets\pepe.jpg" Grid.Row="1" Stretch="Fill"></Image>
+                                </Grid>
+                            </StackPanel>
+                            <Image  Source="Assets\pere.jpg" Grid.Row="3"></Image>
+                        </Grid>
+                    </PivotItem>
+                    <PivotItem Header="Leht 2" Name="pivot2">
+                        <SplitView Grid.Row="2" 
+                       Name="splitview1"
+                       IsPaneOpen="True" 
+                       DisplayMode="CompactInline">
+                            <SplitView.Pane>
+                                <Grid>
+                                    <ScrollViewer>
+                                        <ListBox>                                        
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>
+                                            <ListBoxItem>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock>Item</TextBlock>
+                                                </StackPanel>
+                                            </ListBoxItem>                          
+                                        </ListBox>
+                                    </ScrollViewer>                                    
+                                </Grid>
+                            </SplitView.Pane>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="125"></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition Height="125"></RowDefinition>
+                                    <RowDefinition ></RowDefinition>
+                                    <RowDefinition Height="125"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Row="1" Grid.Column="2" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
+                                <StackPanel Grid.Row="1" Grid.Column="3" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
+                                <StackPanel Grid.Row="1" Grid.Column="4" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
+                                <StackPanel Grid.Row="3" Grid.Column="1" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
+                                <StackPanel Grid.Row="3" Grid.Column="2" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
+                                <StackPanel Grid.Row="3" Grid.Column="3" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
+                                <StackPanel Grid.Row="3" Grid.Column="4" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
+                            </Grid>
+                        </SplitView>
+                    </PivotItem>
                     <PivotItem Header="Leht 3" Name="pivot3"></PivotItem>
                     <PivotItem Header="Leht 4" Name="pivot4"></PivotItem>
                 </Pivot>
             </StackPanel>
         </RelativePanel>
-        <SplitView Grid.Row="2" 
-                   Name="splitview1"
-                   IsPaneOpen="True" 
-                   DisplayMode="CompactInline">
-            <SplitView.Pane>
-                <Grid>
-                    <ScrollViewer>
-                        <ListBox>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock>Item</TextBlock>
-                                </StackPanel>
-                            </ListBoxItem>
-                        </ListBox>
-                    </ScrollViewer>
-                </Grid>
-            </SplitView.Pane>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="125"></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition Height="125"></RowDefinition>
-                    <RowDefinition ></RowDefinition>
-                    <RowDefinition Height="125"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition Width="80"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <StackPanel Grid.Row="1" Grid.Column="1" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
-                <StackPanel Grid.Row="1" Grid.Column="2" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
-                <StackPanel Grid.Row="1" Grid.Column="3" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
-                <StackPanel Grid.Row="1" Grid.Column="4" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
-                <StackPanel Grid.Row="3" Grid.Column="1" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
-                <StackPanel Grid.Row="3" Grid.Column="2" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
-                <StackPanel Grid.Row="3" Grid.Column="3" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
-                <StackPanel Grid.Row="3" Grid.Column="4" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20"></StackPanel>
-            </Grid>
-        </SplitView>
     </Grid>
 </Page>
